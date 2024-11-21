@@ -9,5 +9,8 @@ do
 done
 
 echo "Finished processing the file"
-exit 0
 
+while read line
+do
+	cat "$line"
+done < /tmp/test.txt

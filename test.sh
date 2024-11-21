@@ -1,10 +1,8 @@
 #!/bin/bash
 
-for i in salman mohammed shariff sameem nisa
+
+for variable in "$@"
 do
-	echo $i;
-	if [ $i == "shariff" ]
-	then 
-		break
-	fi
+	ping -c 3 "$variable"
 done
+exit 0
